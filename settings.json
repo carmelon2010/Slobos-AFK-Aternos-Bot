@@ -8,7 +8,7 @@
   "server": {
     "ip": "dataPacks-hejw.aternos.me",
     "port": 35423,
-    "version": "",
+    "version": "1.21.11",
     "try-creative": false
   },
   "position": {
