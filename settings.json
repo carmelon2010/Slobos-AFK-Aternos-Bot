@@ -6,7 +6,7 @@
     "type": "offline"
   },
   "server": {
-    "ip": "bot_try.aternos.me",
+    "ip": "catla.aternos.host",
     "port": 62720,
     "version": "1.21.11",
     "try-creative": false
