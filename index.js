@@ -1988,6 +1988,10 @@ process.on("uncaughtException", (err) => {
     botState.errors = botState.errors.slice(-50);
   }
 
+  if (msg.includes("ETIMEDOUT")) {
+    botState.reconnectAttempts = 0
+  }
+  
   const isNetworkError =
     msg.includes("PartialReadError") ||
     msg.includes("ECONNRESET") ||
@@ -2034,6 +2038,10 @@ process.on("unhandledRejection", (reason) => {
     botState.errors = botState.errors.slice(-50);
   }
 
+  if (msg.includes("ETIMEDOUT")) {
+    botState.reconnectAttempts = 0
+  }
+  
   const isNetworkError =
     msg.includes("ETIMEDOUT") ||
     msg.includes("ECONNRESET") ||
